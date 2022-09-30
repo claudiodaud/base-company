@@ -70,14 +70,5 @@ class Company extends Model
         return $this->hasMany(Customer::class);
     }
 
-    /**
-     * Company belongs to Services.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function services()
-    {
-        // belongsTo(RelatedModel, foreignKey = users_id, keyOnRelatedModel = id)
-        return $this->belongsToMany(Service::class);
-    }
+    
 }
